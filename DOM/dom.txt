@@ -1,0 +1,10 @@
+-DOM stands for document object model
+Every browser creates a window object of the website being hosted on it's own.
+
+Under window object(GLOBAL object) comes Document object which further contains all the information of the html being used
+in that particular website. It is made in a tree like structure having nodes like head, body then further more
+in a hierarchical manner.
+
+-Console.dir(<name of function of method);
+it displays the properties and type of the object specified.
+

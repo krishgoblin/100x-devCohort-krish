@@ -1,0 +1,42 @@
+1. Ecma Script - it is a scripting language specfication standardized for whom soever trying to make a complier fo java script
+2. JavaScript - is a scripting language.  common JS browser engines- spiderMonkey(firefox), V8 engine(chrome ka compiler)
+3. Node.js - it is a runtime enviorment for js
+4. Bun- it is also a runtime enviorment for js but faster than node.js although it is also single threaded.
+It is written Zig.
+
+What all things can be done using Node.js
+-create a video player, game, clis(Command line interafce)
+-create a Http server.(IMP)
+
+what is an Http server
+-Hyper text transfer protocol
+-It is a protocol that is a way for machines(Browsers) so that websites's frontend can talk to its backend.
+
+Things client side need for a http server
+- protocol (http/ Https)
+- address(ip/url)
+- route (Path)
+- header, body, footer (some input)
+- method (GET, POST, PUT, DELETE)
+
+server side 
+- response headers 
+- response body
+- response code
+
+DNS(domain name system)
+- mapping of url names to actual IP addresses.
+- establishes the connection to an IP using handshaking techniques.
+
+Creating our own HTTP server in Node.js using [express] library
+- refer index.js file in HTTP server folder. run the file and search for localhost:300 on browser.
+- express is just a library which is written by some smart people fo us so that we doesn't have to 
+create a server in C everytime from scratch.
+
+There can be other ways as well to expose our logic to th world.
+
+REQUESTS
+-GET => get something in the form of header OR going to get a checkup.
+-POST => going to get a new kidney
+-PUT => going to get the kidney replaced
+-DELETE => going to get the kidney removed

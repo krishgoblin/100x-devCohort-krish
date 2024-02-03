@@ -1,0 +1,13 @@
+*{
+    background-color: wheat;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbarsub{
+    display: flex;
+    justify-content: space-evenly;
+}
