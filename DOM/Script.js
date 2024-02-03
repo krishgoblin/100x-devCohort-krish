@@ -13,9 +13,8 @@ document.body.childNodes[1].innertext = "Balle BAlle"
 // let para = document.getElementsByTagName("p");
 // console.log(para);
 
-// let heading2 = document.querySelector("h2");
-// heading2.append(" from krish ki kaksha");
+let heading2 = document.querySelector("h2");
+heading2.append(" from krish ki kaksha");
 
-let heading = document.querySelectorAll("headings");
-heading.append(" append ki maa ki chutt");
+
 
