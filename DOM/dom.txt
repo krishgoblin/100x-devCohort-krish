@@ -8,3 +8,27 @@ in a hierarchical manner.
 -Console.dir(<name of function of method);
 it displays the properties and type of the object specified.
 
+DOM Manipulation
+
+[suppposebly ugly way]
+-document.getElementById("myid")  //selecting by ID
+-document.getElementByClassName("myClass")  //selecting by className --returns a collection
+-document.getElementByTag("tag")  //selecting by tag
+
+better using QUERY SELECTORS
+-document.querySelector(Id/class/tag)
+-document.querySelectorAll(Id/class/tag)  //selects all and returns a list of nodes
+
+some properties
+-tagName
+-innerText
+-innerHTML
+-textContent
+
+-getAttribute(attr)
+-setAttribute(attr, value)
+
+-node.style
+
+How to insert ELement
+-let el = document.createElement("div")

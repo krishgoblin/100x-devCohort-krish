@@ -2,6 +2,14 @@
     color: red;
 }
 
+.div2{
+    height: 150px;
+    width: 100px;
+    background: crimson;
+    border: 2px solid;
+    border-color: black;
+}
+
 body{
     background-color: lavender;
 }
