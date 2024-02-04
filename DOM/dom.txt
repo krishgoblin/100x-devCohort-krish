@@ -30,5 +30,17 @@ some properties
 
 -node.style
 
-How to insert ELement
--let el = document.createElement("div")
+--How to insert ELement
+let el = document.createElement("div")
+el.innerText = "Gendu"
+
+console.log(el)
+
+let node = document.querySelector("body")
+node.prepend(el) //adds at the start of the node
+node.append(el)  //adds at the end of the node
+node.before(el) //adds before the node
+node.after(el)  //adds after the node
+node.remove()  //delete the node
+
+
