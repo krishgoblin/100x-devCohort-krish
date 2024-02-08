@@ -181,4 +181,18 @@ main();
 //asyn await (PromiseFunc)
 
 
+//promise chaning
+//    ||
+//    \/
+// let promise1 = ...
+// promise1.then((res)=>{
+//     console.log("DONE");
+//     let promise2 = ...
+//     promise2.then((res)=>{
+//         console.log("task2 DONE");
+//     });
+// });
+
+
+//fetch api
 
