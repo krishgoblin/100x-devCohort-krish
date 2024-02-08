@@ -45,6 +45,7 @@ const ans = promisfy(3000);
 console.log(ans);
 ans.then(function(){
     console.log("timeout is done.")
+    console.log(ans);
 }); //calling an promise function....Syntax
 
 
