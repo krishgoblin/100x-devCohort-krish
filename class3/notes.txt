@@ -1,0 +1,18 @@
+-How to authenticate?
+Answers-Middlewares
+-It is used to checkup whatever inputs we need to check from user.
+-An ugly way of doing it writing the auth check code part in every path again and again.
+
+-Rather we should make Middlewares which is basically wrapping up the auth check code into a function  
+and then use it in routes "app.get('/',usermiddleware, kidneymiddleware //these are checks// , function(req,res){})
+wherever needed.  REFER to Middlewares.js for more clarity.
+
+-usernames and passwords should be sent in headers.
+
+-to use Middlewares universely we use app.use(<middleware_name>); //before the app.get or post or other routes.
+
+-INPUT VALIDATION
+//we can use something called global catches.
+REFER to Middlewares.js for more clarity.
+
+-ZOD library(How to do better input validation)

@@ -18,7 +18,7 @@ const getcat = (async() => {
     //to make the data usefull we use .json() method
     let data = await response.json();
     console.log(data[0]);
-    let imgurl = data[1].url;
+    let imgurl = data[0].url;
     document.getElementById("cat").src = `${imgurl}`;
     // let el = document.createElement("p");
     // el.innerHTML(`<img src = ${imgurl} alt = "Cat photo">`);  

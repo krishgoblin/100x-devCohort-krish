@@ -29,14 +29,26 @@ DNS(domain name system)
 - establishes the connection to an IP using handshaking techniques.
 
 Creating our own HTTP server in Node.js using [express] library
-- refer index.js file in HTTP server folder. run the file and search for localhost:300 on browser.
+- refer index.js file in HTTP server folder. run the file and search for localhost:3000(on which ever port number you selected) on browser.
 - express is just a library which is written by some smart people fo us so that we doesn't have to 
-create a server in C everytime from scratch.
+create a server in C everytime from scratch.  
+(use npm install express to install it in directory).
+(use node <filename>).
 
-There can be other ways as well to expose our logic to th world.
+There can be other ways as well to expose our logic to the world.
 
 REQUESTS
 -GET => get something in the form of header OR going to get a checkup.
--POST => going to get a new kidney
--PUT => going to get the kidney replaced
--DELETE => going to get the kidney removed
+-POST => going to get a new kidney..like updating the value.
+-PUT => going to get the kidney replaced..like performing some logic on the data like making it all positive or something.
+-DELETE => going to get the kidney removed..as the name suggests deleting some data.
+
+Express-
+res.send("Used to send Some text")
+res.json({"Used to send json files"})
+
+To get post body request as inputs in our code we should use-
+app.use(express.json()); //This is a Middleware in itself // more on it in next class.
+
+To make the server work we have to use-
+app.listen(<portnumber>);  // at the last
