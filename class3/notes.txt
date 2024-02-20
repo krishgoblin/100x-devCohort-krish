@@ -16,3 +16,9 @@ wherever needed.  REFER to Middlewares.js for more clarity.
 REFER to Middlewares.js for more clarity.
 
 -ZOD library(How to do better input validation)
+
+-HASHING -> it is one way. we can only hash it using the hashing function but we cannot dehash it.
+-Encryption -> it is two. it's like we can encrypt and decrypt the value if we have the key. 
+-Json WEB Tokens(JWT) -> Similar to Encryption(in jwt anyone can decode) but can only be verfied by the company or backend specifically.
+[we can also say JWT is like a digital signature. anyone can see it but only the bank can verfy  it.]
+-Local Storage -> Token is stored into this.

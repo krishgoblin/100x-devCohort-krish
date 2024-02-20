@@ -22,7 +22,7 @@ Things client side need for a http server
 server side 
 - response headers 
 - response body
-- response code
+- response code 
 
 DNS(domain name system)
 - mapping of url names to actual IP addresses.
