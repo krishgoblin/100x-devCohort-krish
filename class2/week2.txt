@@ -1,4 +1,4 @@
-1. Ecma Script - it is a scripting language specfication standardized for whom soever trying to make a complier fo java script
+1. Ecma Script - it is a scripting language specfication standardized for whom soever trying to make a complier of java script
 2. JavaScript - is a scripting language.  common JS browser engines- spiderMonkey(firefox), V8 engine(chrome ka compiler)
 3. Node.js - it is a runtime enviorment for js
 4. Bun- it is also a runtime enviorment for js but faster than node.js although it is also single threaded.
@@ -29,11 +29,11 @@ DNS(domain name system)
 - establishes the connection to an IP using handshaking techniques.
 
 Creating our own HTTP server in Node.js using [express] library
-- refer index.js file in HTTP server folder. run the file and search for localhost:3000(on which ever port number you selected) on browser.
+- refer index.js file in HTTP server folder. run the file and search for localhost:<port Number>(on which ever port number you selected) on browser.
 - express is just a library which is written by some smart people fo us so that we doesn't have to 
 create a server in C everytime from scratch.  
 (use npm install express to install it in directory).
-(use node <filename>).
+(use node <filename> to run it).
 
 There can be other ways as well to expose our logic to the world.
 

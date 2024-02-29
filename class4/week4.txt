@@ -1,1 +1,3 @@
-debouncing and throtlling -
+debouncing and throtlling-
+basically to limit number of requests in a specified period of time i.e. 1sec or some miliseconds
+using SetTimeOut function.

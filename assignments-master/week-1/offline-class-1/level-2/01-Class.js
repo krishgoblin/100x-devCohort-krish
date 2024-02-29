@@ -9,4 +9,5 @@ class Animal {
   }
 }
 
-
+let ani = new Animal("vedeya",4);
+console.log(ani.describe());

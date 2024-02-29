@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+    <label for="fname">Firstname:</label>
+    <input id="fname" type="text" placeholder="Enter first name">
+    <br>
+    <br>
+    <label for="lname">Lastname:</label>
+    <input id="lname" type="text" placeholder="Enter last name">
+    <br>
+    <br>
+    <button onclick="PrintName()">Print Name</button>
+    <br><br>
+    <div id="inner_div"> Hello World </div>
+    <!-- <script src="index.js"></script> -->
+    </body>
+    </div>
+
+    <div id="div2">
+        <h1>To Do</h1>
+        <label for="Title">Title:</label>
+        <input type="text" id="title" name="Title" palceholder="Title"> <br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" palceholder="description">
+        <button onclick="addTodo()">Add Todo</button>
+
+        <div id="todos">
+
+
+        </div>
+
+    </div>
+    <script>
+        let globalId = 1;
+        let todoState =[];
+
+    function markAsDone(todoId) {
+      const parent = document.getElementById(todoId);
+      parent.children[2].innerHTML = "Done!"
+    }
+
+    function createChild(title, description, id) {
+      const child = document.createElement("div");
+      const firstGrandParent = document.createElement("div");
+      firstGrandParent.innerHTML = title;
+      const secondGrandParent = document.createElement("div");
+      secondGrandParent.innerHTML = description;
+      const thirdGrandParent = document.createElement("button");
+      thirdGrandParent.innerHTML = "Mark as done";
+      thirdGrandParent.setAttribute("onclick", `markAsDone(${id})`);
+      child.appendChild(firstGrandParent);
+      child.appendChild(secondGrandParent);
+      child.appendChild(thirdGrandParent)
+      child.setAttribute("id", id);
+      return child;
+    }
+
+    function updateState(newTodos) {
+      const parent = document.getElementById("todos");
+      parent.innerHTML = "";
+      for (let i = 0; i < newTodos.length; i++) {
+        const title = newTodos[i].title;
+        const description = newTodos[i].description;
+        parent.appendChild(createChild(title, description, globalId));
+      }
+    }
+
+    function addTodo() {
+      const title = document.getElementById("title").value;
+      const description = document.getElementById("description").value;
+      todoState.push({
+        title: title,
+        description: description,
+        id: globalId++,
+      })
+      updateState(todoState);
+    }
+
+    // function addTodo() {
+    //   const title = document.getElementById("title").value;
+    //   const description = document.getElementById("description").value;
+    //   const parent = document.getElementById("todos");
+
+    //   parent.appendChild(createChild(title, description, globalId++));
+    // }
+    </script>
+</body>
+</html>
+
+<!-- We use DOM manipulation in order to get a dynamic website -->

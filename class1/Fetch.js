@@ -20,9 +20,6 @@ const getcat = (async() => {
     console.log(data[0]);
     let imgurl = data[0].url;
     document.getElementById("cat").src = `${imgurl}`;
-    // let el = document.createElement("p");
-    // el.innerHTML(`<img src = ${imgurl} alt = "Cat photo">`);  
-    // body.append(el);
 })();    //use of  iife
 
 // (async = ()=>{})();
