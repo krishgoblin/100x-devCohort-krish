@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="buttonparent">
+
+    </div>
+    <script>
+        //we need three functions
+        //1. state and its onclick fn which updates the state
+        //2. component function
+        //3. re-rendering Component function
+        let state={
+            count: 0
+        }
+        function buttonOnClick(){
+            state.count++;
+            buttonComponentRerender();
+        }
+
+        function buttonComponentRerender(){
+            document.getElementById("buttonparent").innerHTML=" ";
+            const component = buttonComponent(state.count);
+            document.getElementById("buttonparent").appendChild(component);
+            return;
+
+        }
+
+        function buttonComponent(count){
+            const button = document.createElement("button");
+            button.innerHTML="counter " + count;
+            button.setAttribute("onclick", `buttonOnClick()`);
+            return button;
+        }
+
+        buttonComponentRerender();
+
+    </script>
+</body>
+</html>
