@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -17,11 +17,16 @@ function App() {
     // }
   ])
 
-  fetch("http://localhost:3000/todos")
+  useEffect(()=>{
+    setInterval(()=>{
+      fetch("http://localhost:3000/todos")
     .then(async function(res){
     const result = await res.json();
     setTodos(result.todos);   // cuz we have send todos from our backend
-  })
+  })},3000)
+  }, [])
+
+  
 
   return (
     <div>
