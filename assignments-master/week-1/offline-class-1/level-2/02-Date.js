@@ -26,3 +26,8 @@ function dateMethods() {
 
 // Example Usage for Date Methods
 dateMethods();
+
+var a = 5 + "9";
+var b = 5 - "3";
+console.log(a);
+console.log(b);

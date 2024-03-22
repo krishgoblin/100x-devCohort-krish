@@ -7,7 +7,7 @@ let counter=3;
 
 function App() {
   return <>
-  <Cardwrapper innercomponent={<TextComponent />} />
+  <Cardwrapper innercomponent={<TextComponent />} />   
   </>
   // const [todos, setTodos] = useState([
   //   {id: 1,  
