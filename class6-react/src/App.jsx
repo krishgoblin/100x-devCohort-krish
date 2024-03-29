@@ -34,7 +34,7 @@ function App() {
   // </>
 
 
-
+// -----------------------X---------------------------
 
 
 //   return <>  
@@ -52,7 +52,7 @@ function App() {
 //   }
 
 //   return <>
-//   <button onClick={updateTitle}>Click to Change</button>
+  // <button onClick={updateTitle}>Click to Change</button>       //passing down a function
 //     <Header title={title}></Header>
 //   </>
 
@@ -77,7 +77,7 @@ function Todo({title, description}){
   </>
 }
 
-
+ 
 function Header({title}){
   return <div>
       {title}

@@ -48,7 +48,7 @@ function App() {
 
 
 //------------------------------X-------------------------------------
-
+// Used Memo and useCallback
 
 // function App(){
 //   const [count, setCount] = useState(0);
@@ -80,6 +80,7 @@ function App() {
 
 //------------------------------X-------------------------------------
 
+// Using useMemo
 
 //Ugly wayyy CUz a Re-render happens and everthing rerenders rather than the only changed value
 // function App() {
@@ -110,7 +111,7 @@ function App() {
 
 
 //------------------------------X-------------------------------------
-
+      
 
 // function App(){
 //   const [selectedid, setSelectedId] = useState(1);
@@ -153,7 +154,7 @@ function App() {
 
 //------------------------------X-------------------------------------
 
-
+ // Using useEffect hook
 // function App() {
 //   const [todos, setTodos] = useState([])
 
