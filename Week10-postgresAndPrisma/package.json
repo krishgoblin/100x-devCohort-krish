@@ -1,0 +1,22 @@
+{
+  "name": "week10-postgresandprisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postgress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.13.0",
+    "prisma": "^5.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "yarn": "^1.22.22"
+  }
+}
